@@ -8,5 +8,19 @@ public class SimpleCalculator {
 
         // Write your program here
 
+        int firstNumber;
+        int secondNumber;
+
+        System.out.println("Give the first number:");
+        firstNumber = Integer.valueOf(scanner.nextLine());
+
+        System.out.println("Give the second number:");
+        secondNumber = Integer.valueOf(scanner.nextLine());
+
+        System.out.println(firstNumber+" + "+secondNumber+" = "+ (firstNumber+secondNumber));
+        System.out.println(firstNumber+" - "+secondNumber+" = "+ (firstNumber-secondNumber));
+        System.out.println(firstNumber+" * "+secondNumber+" = "+ (firstNumber*secondNumber));
+        System.out.println(firstNumber+" / "+secondNumber+" = "+ ((double)firstNumber/secondNumber));
+
     }
 }
