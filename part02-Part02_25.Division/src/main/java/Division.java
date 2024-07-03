@@ -8,8 +8,11 @@ public class Division {
         // try it out here. Fopr example division(3,5);
         // should print "0.6"
 
-        // division(3, 5);
+        division(3, 5);
     }
 
+    public static void division(int num1, int num2){
+        System.out.println(num1 / (double) num2 );
+    }
     // implement the method here
 }

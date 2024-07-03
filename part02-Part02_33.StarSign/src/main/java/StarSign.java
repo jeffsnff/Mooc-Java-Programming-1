@@ -12,25 +12,38 @@ public class StarSign {
         System.out.println("\n---");  // printing --- between the shapes
         printSquare(4);
         System.out.println("\n---");
-        printRectangle(5, 6);
+        printRectangle(17, 3);
         System.out.println("\n---");
-        printTriangle(3);
+        printTriangle(4);
         System.out.println("\n---");
     }
 
     public static void printStars(int number) {
-        // first part of the exercise
+        String stars = "";
+        for(int i=0; i<number; i++){
+            stars += "*";
+        }
+        System.out.println(stars);
     }
 
     public static void printSquare(int size) {
         // second part of the exercise
+        for(int i=0; i<size; i++){
+            printStars(size);
+        }
     }
 
     public static void printRectangle(int width, int height) {
         // third part of the exercise
+        for(int i=0; i<height; i++){
+            printStars(width);
+        }
     }
 
     public static void printTriangle(int size) {
         // fourth part of the exercise
+        for(int i=1; i<=size; i++){
+            printStars(i);
+        }
     }
 }
