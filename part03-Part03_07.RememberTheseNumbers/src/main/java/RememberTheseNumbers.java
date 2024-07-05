@@ -13,8 +13,11 @@ public class RememberTheseNumbers {
             if (luku == -1) {
                 break;
             }
-
             numbers.add(luku);
+        }
+
+        for(int index=0; index < numbers.size(); index++){
+            System.out.println(numbers.get(index));
         }
 
     }

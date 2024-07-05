@@ -13,9 +13,20 @@ public class OnlyTheseNumbers {
             if (number == -1) {
                 break;
             }
-
             numbers.add(number);
         }
 
+        System.out.println("From where?");
+        int firstIndex = Integer.valueOf(scanner.nextLine());
+
+        System.out.println("To where?");
+        int lastIndex = Integer.valueOf(scanner.nextLine());
+
+        for( int index = firstIndex; index<numbers.size(); index++){
+            if(index > lastIndex){
+                break;
+            }
+            System.out.println(numbers.get(index));
+        }
     }
 }

@@ -13,12 +13,18 @@ public class IndexOf {
             if (input == -1) {
                 break;
             }
-
             list.add(input);
         }
-
         System.out.println("");
 
         // implement here finding the indices of a number
+        System.out.println("Search for?");
+        int searchNum = Integer.valueOf(scanner.nextLine());
+        
+        for(int index = 0; index<list.size(); index++){
+            if(searchNum == list.get(index)){
+                System.out.println(searchNum+" is at index "+index);
+            }
+        }
     }
 }
